@@ -72,6 +72,11 @@
     <p ng-show="userForm.gender.$invalid && !userForm.gender.$pristine" class="help-block">You gender is required.</p>
   </div>
   </div>
+
+          <input type="file" id="fileInput" class="yellowButton"></input>
+          <br>
+          <button type='submit' ng-click='previewUploadImage()'> Preview Upload Image </button>
+
   <div class='form-group'>
     <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
   </div>
@@ -79,3 +84,4 @@
 <p ng-show='invalidSignup'>User already signed up</p>
 <p> Already a user?
   <a ui-sref='customerLogin'>Click here</a> to login</p>
+<img  id='uploadImage' width="400" height="400">
