@@ -15,12 +15,13 @@ angular.module('asyncdrink.customerAuth', [])
   $scope.clear = function() {
     $scope.invalidLogIn = false;
   };
+
   var globalPicture;
   $scope.previewUploadImage = function() {
+
     var fileInput = document.getElementById('fileInput');
     var file = fileInput.files[0];
     var img = document.getElementById('uploadImage');
-
     var reader = new FileReader();
     reader.onload = function(e) {
       img.src = reader.result;
@@ -29,10 +30,10 @@ angular.module('asyncdrink.customerAuth', [])
     reader.readAsDataURL(file);
   }
 
+
   $scope.signUp = function() {
-    console.log('globalPicture is ', globalPicture);
-    console.log('$scope.newUser is ', $scope.newUser );
     $scope.newUser.photo = globalPicture;
+    console.log(' $scope.newUser is ', $scope.newUser);
     customerFactory.signUp($scope.newUser)
       .then(function(response) {
         //hide error message, if displayed
