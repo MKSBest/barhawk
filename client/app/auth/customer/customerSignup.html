@@ -1,5 +1,12 @@
 <h3>Sign Up!</h3>
+
+<input type="file" id="fileInput" class="yellowButton"></input>
+<br>
+<button  ng-click='previewUploadImage()'> Preview Upload Image </button>
+<img  id='uploadImage' width="80" height="80">
+<br>
 <form name="userForm" novalidate ng-submit='signUp(userForm.$valid)'>
+
 
   <div class='form-group'ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine &&  userForm.firstname.$touched}">
     <label> First Name </label>
@@ -72,6 +79,9 @@
     <p ng-show="userForm.gender.$invalid && !userForm.gender.$pristine" class="help-block">You gender is required.</p>
   </div>
   </div>
+
+         
+          
   <div class='form-group'>
     <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
   </div>
