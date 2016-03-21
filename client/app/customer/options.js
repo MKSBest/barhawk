@@ -49,10 +49,20 @@ angular.module('asyncdrink.options', [])
           //BAC spectrum slider
           var spectrum = document.getElementById('spectrum');
           var t = Math.floor(($scope.currentUser.BAC / 0.4) * 100);
-          console.log('t is ', t);
           spectrum.value = t;
-          console.log('scope currentUser BAC is ', $scope.currentUser.BAC)
-          console.log('spectrum.value is ', spectrum.value)
+          var spectrumText = document.getElementById('spectrumText');
+          var x;
+          if( $scope.currentUser.BAC >= 0 && $scope.currentUser.BAC < 0.08){
+            x = 'sober';
+          }
+          else if(  $scope.currentUser.BAC === 0.08 ){
+            x = 'keep drinking. but DONT DRIVE!';
+          }
+          else{
+            x = 'start dancing';
+          }
+          spectrumText.value = x;
+
        
     });
 };
