@@ -58,8 +58,11 @@ angular.module('asyncdrink.options', [])
           else if(  $scope.currentUser.BAC === 0.08 ){
             x = 'keep drinking. but DONT DRIVE!';
           }
-          else{
+          else if($scope.currentUser.BAC > 0.08 && $scope.currentUser.BAC < 0.4){
             x = 'start dancing';
+          }
+          else{
+            x = 'your in a COMMA';
           }
           spectrumText.value = x;
 
