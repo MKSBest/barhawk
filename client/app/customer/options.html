@@ -10,18 +10,16 @@
 <p ng-show='tabFail'>You've already closed your tab or have yet to order a drink!</p>
 <h1 class="title-heading">Bar Hawk</h1>
 <div id="options">
-  <div class = "BAC">
-    <h2>Hi, {{currentUser.firstname}}!</h2>
-    <h4>Your Drink Count: {{currentUser.drinkCount}}</h4>
-    <h4> Estimated BAC: {{currentUser.BAC}}%</h4>
-
+    <div class="BAC">
+        <h2>Hi, {{currentUser.firstname}}!</h2>
+        <h4>Your Drink Count: {{currentUser.drinkCount}}</h4>
+        <h4> Estimated BAC: {{currentUser.BAC}}%</h4>
         <!-- BAC spectrum slider -->
-      <input id='spectrum' type="range" />
-      <input type='text'/ id='spectrumText' size="75%" >
-      <br>
-      <br>
-  
-  </div>
+        <input id='spectrum' type="range" />
+        <input type='text' / id='spectrumText' size="75%">
+        <br>
+        <br>
+    </div>
     <!-- ORDER AND ORDER/CLOSE BUTTONS -->
     <div class='orderButtons'>
         <p class="order"> <img src="http://res.cloudinary.com/hidgkk5lm/image/upload/v1458675036/sc-min_jwehxr.png"> Your order <img src="http://res.cloudinary.com/hidgkk5lm/image/upload/v1458675036/sc-min_jwehxr.png">
@@ -45,6 +43,10 @@
     <!-- RADIO BUTTONS FOR DRINK DISPLAY -->
     <div class="selectionOptions">
         <ul>
+            <li>
+                <input type="radio" id="a-option" ng-model="type" name="selector">
+                <label for="a-option">All</label>
+            </li>
             <li>
                 <input type="radio" id="b-option" ng-model="type" name="selector" value="beer">
                 <label for="b-option">Beer</label>
@@ -81,4 +83,4 @@
     <br>
     <br>
 </div>
-<br>
+<br
