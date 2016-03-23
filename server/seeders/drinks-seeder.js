@@ -447,3 +447,4 @@ module.exports = {
           return queryInterface.bulkDelete('Person', null, {});
         */
     }
+};
