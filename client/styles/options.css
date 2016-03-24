@@ -93,13 +93,13 @@
     }*/
 
 
-    }
+    
     .sideDrink{
-        height: 20%;
+        height: 15%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 15em;
+        height: 10em;
     }
     ul li .drinkCell {
         height: 5%;
