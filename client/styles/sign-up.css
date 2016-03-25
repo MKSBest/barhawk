@@ -2,6 +2,7 @@
 body {
     background: url("jcBar.jpg");
     background-size: cover;
+
 }
 
 h3 {
@@ -9,6 +10,15 @@ h3 {
     font-family: Monaco;
     margin-bottom: 10px;
     color: #800000;
+    text-shadow: 2px 2px 3px #ff0000;
+}
+
+h1{
+    font-size: 40px;
+    font-family: Monaco;
+    margin-bottom: 10px;
+    color: #800000;
+    text-shadow: 2px 2px 3px #ff0000;
 }
 
 label {
