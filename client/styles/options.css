@@ -346,8 +346,8 @@ sel .title-heading {
 
 
 html { width: 100vw; 
-/*overflow-y: scroll;
-*//*height: 101%;*/
+overflow-y: scroll;
+*//*height: 101%;
 /*
 position: relative;
 height: 510px;
