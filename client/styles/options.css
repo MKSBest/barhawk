@@ -1,7 +1,26 @@
 body {
     background-color: #cccccc;
     padding: 0px;
+/*    overflow-y: scroll;
+*//*height:101%;*/
+/*overflow-y: scroll;
+*/ }
+
+#top {
+    background-color: #800000;
+    position: absolute;
+    display: inline-block;
+    margin: 0em 0em 0em 0em;
+    bottom: 25%;
+    right: 10%;
+    color: white;
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
 }
+
 
 @media(min-width:780px) {
     .sidebar {
@@ -310,6 +329,29 @@ sel .title-heading {
     height: 2em;
     font-size: 2em;
 }
+#top {
+    background-color: #800000;
+    position: absolute;
+    display: inline-block;
+    margin: 0em 0em 0em 0em;
+    bottom: 25%;
+    right: 10%;
+    color: white;
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+
+html { width: 100vw; 
+overflow-y: scroll;
+*//*height: 101%;
+/*
+position: relative;
+height: 510px;
+overflow-y: scroll;*/
 
 .BACbutton {
     border: none;
@@ -347,4 +389,18 @@ sel .title-heading {
     color: white;
     height: 2.3em;
     font-size: 1.1em;
+}
+
+
+
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(20,40,60,3.5);
+    -webkit-box-shadow: 0 0 1px rgba(455,655,855,.5);
 }
